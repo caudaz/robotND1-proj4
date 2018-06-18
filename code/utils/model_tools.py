@@ -46,6 +46,7 @@ def load_network(your_weight_filename):
 
 def write_predictions_grade_set(model, out_folder_suffix,subset_name, grading_dir_name):
     validation_path = os.path.join('..', 'data', grading_dir_name, subset_name)
+    print('validation_path=',validation_path)
     file_names = sorted(glob.glob(os.path.join(validation_path, 'images', '*.jpeg')))
 
     output_path = os.path.join('..', 'data', 'runs', subset_name + '_' + out_folder_suffix)
