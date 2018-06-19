@@ -1,3 +1,11 @@
+# Work in progress #
+
+training/validation finished, writing report
+
+
+
+
+# For UDACITY's original REPO go here: #
 [![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 
 ## Deep Learning Project ##
