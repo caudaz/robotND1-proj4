@@ -129,7 +129,7 @@ able to improve accuracy of the model. The model is saved by creating an
 Using the frozen weights of the FCN, the Quadcopter can be controlled by
 using the follower.py script.
 
-A video showing the follow me is shown here.
+[A video showing the follow me is shown here.](./media/caudaz_followme_modelweights_720p.mp4)
 
 ## FUTURE ENHANCEMENTS ##
 
@@ -173,14 +173,13 @@ Basically, the latest numpy version is 1.14.2, but you want to go back
 to 1.13.1
 ```
 
-&gt;&gt;&gt; import numpy
+>import numpy
 
-&gt;&gt;&gt; numpy.version.version '1.14.5'
+>numpy.version.version '1.14.5'
 
-&gt;&gt;&gt;pip install numpy==1.13.1
+>pip install numpy==1.13.1
 
-(RoboND) :/mnt/c/UDACITY-robotics4/robotND1-proj4/code\# python
-preprocess\_ims.py
+(RoboND) ~/robotND1-proj4/code/# python preprocess_ims.py
 ```
 
 NO ERRORS now!!!!!
@@ -192,9 +191,9 @@ NO ERRORS now!!!!!
 2-start controls
 ```
 
-(RoboND) :\~/robotND1-proj4/code\$ pwd
+(RoboND) ~/robotND1-proj4/code\$ pwd
 
 /home/a1/robotND1-proj4/code
 
-(RoboND) :\~/robotND1-proj4/code\$ python follower.py model\_weights
+(RoboND) ~/robotND1-proj4/code\$ python follower.py model_weights
 ```
