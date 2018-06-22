@@ -20,7 +20,7 @@ normalization
 
 *Keras (as a higher level of TF for rapid prototyping of NNs)
 
-##DATA COLLECTION##
+## DATA COLLECTION ##
 
 Part of the project was to collect the image data to train the FCN. It
 is essential to devise a good strategy for this so that all types of
@@ -36,7 +36,7 @@ target)
 
 -images w/out target or non-target people
 
-##FCN##
+## FCN ##
 
 FCNs classify and predict where the object is in the image as opposed to
 CNNs that only classify the object. After the FCN is trained, the
@@ -77,7 +77,7 @@ If we wanted the drone to follow a different target shape, e.g. a dog,
 or a robot, the FCN would have to be retrained to obtain a new set of
 weights. However, the same architecture can be used.
 
-##TRAINING PARAMETERS CHOSEN##
+## TRAINING PARAMETERS CHOSEN ##
 
 learning\_rate = 0.002 (chosen high since using batch normalization)
 
@@ -122,18 +122,18 @@ The FCN was able to obtain a final passing score &gt; 0.4. More data
 able to improve accuracy of the model. The model is saved by creating an
 .h5 file that contains all weights of the FCN.
 
-##QUADCOPTER FOLLOW ME using INFERENCE##
+## QUADCOPTER FOLLOW ME using INFERENCE ##
 
 Using the frozen weights of the FCN, the Quadcopter can be controlled by
 using the follower.py script.
 
 A video showing the follow me is shown here.
 
-##FUTURE ENHANCEMENTS##
+## FUTURE ENHANCEMENTS ##
 
 Inception modules
 
-##INSTRUCTIONS FOR DATA PROCESSING##
+## INSTRUCTIONS FOR DATA PROCESSING ##
 
 1-These folders should exist and contain the appropriate processed
 data(after running preprocess\_ims.py):
