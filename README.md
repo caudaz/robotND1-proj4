@@ -27,14 +27,14 @@ is essential to devise a good strategy for this so that all types of
 images are represented and with appropriate amounts. The basic idea was
 to collect 4 types of images all over the Unity “world”:
 
--images following target (sometimes zig-zag to get different angles of
+* images following target (sometimes zig-zag to get different angles of
 target)
 
--images of non-target people
+* images of non-target people
 
--images of target inside groups of many non-target people
+* images of target inside groups of many non-target people
 
--images w/out target or non-target people
+* images w/out target or non-target people
 
 ## FCN ##
 
@@ -96,10 +96,10 @@ validation_steps = #valid_samples // batch_size +1
 
 The FCN was run using 2 data sets:
 
--dataset\#1 included images that I collected: 1209 for training and 698
+* dataset\#1 included images that I collected: 1209 for training and 698
 for validation
 
--dataset\#2 included images that I collected PLUS images downloaded:
+* dataset\#2 included images that I collected PLUS images downloaded:
 5327 for training and 1869 for validation
 
 The model was run on Amazon’s EC2 p2.xlarge instance.
@@ -140,6 +140,7 @@ Inception modules
 1-These folders should exist and contain the appropriate processed
 data(after running preprocess\_ims.py):
 
+```
 data/train/images/
 
 data/train/masks/
@@ -147,6 +148,7 @@ data/train/masks/
 data/validation/images/
 
 data/validation/masks/
+```
 
 2-copy into folder: \~/robotND1-proj4/data\$ cp -r
 processed\_sim\_data/\* .
@@ -154,6 +156,7 @@ processed\_sim\_data/\* .
 NOTE: BUG when running preprocess\_ims.py on NUMPY , will not create the
 correct number of mask image files
 
+```
 (RoboND) :/mnt/c/UDACITY-robotics4/robotND1-proj4/code\# python
 preprocess\_ims.py
 
@@ -164,9 +167,11 @@ line 97, in bytescale cscale = cmax - cmin
 TypeError: numpy boolean subtract, the \`-\` operator, is deprecated,
 use the bitwise\_xor, the \`\^\` operator, or the logical\_xor function
 instead.
+```
 
 Basically, the latest numpy version is 1.14.2, but you want to go back
 to 1.13.1
+```
 
 &gt;&gt;&gt; import numpy
 
@@ -176,17 +181,20 @@ to 1.13.1
 
 (RoboND) :/mnt/c/UDACITY-robotics4/robotND1-proj4/code\# python
 preprocess\_ims.py
+```
 
-NO ERRORS!!!!!
+NO ERRORS now!!!!!
 
-USING WEIGHTS to FOLLOW ME
+## USING WEIGHTS to FOLLOW ME ##
 
 1-start simulator "spawn people" mode, click "follow me" button
 
 2-start controls
+```
 
 (RoboND) :\~/robotND1-proj4/code\$ pwd
 
 /home/a1/robotND1-proj4/code
 
 (RoboND) :\~/robotND1-proj4/code\$ python follower.py model\_weights
+```
