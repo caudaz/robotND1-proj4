@@ -24,13 +24,11 @@ normalization
 
 * [Original UDACITY REPO](https://github.com/udacity/RoboND-DeepLearning-Project)
 
-* [PID control exercises](https://github.com/caudaz/robotND1-proj4_PID_control)
-
 * [Quadrotor controls lab](https://github.com/caudaz/robotND1-proj4_Quadrotor_PID)
 
 * [Semantic Segmentation lab](https://github.com/caudaz/robotND1-proj4_Segmentation_Lab)
 
-* [Project4 practice code](https://github.com/caudaz/robotND1-proj4_exercises)
+* [Project4 lessons: theory and code](https://github.com/caudaz/robotND1-proj4_exercises)
 
 ## DATA COLLECTION ##
 
