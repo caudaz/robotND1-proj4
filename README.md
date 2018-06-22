@@ -26,9 +26,9 @@ normalization
 
 * [PID control exercises](https://github.com/caudaz/robotND1-proj4_PID_control)
 
-* [Quadrotor controls lab](https://github.com/caudaz/robotND1-proj4_Quadrotor_PID
+* [Quadrotor controls lab](https://github.com/caudaz/robotND1-proj4_Quadrotor_PID)
 
-* [Semantic Segmentation lab](https://github.com/caudaz/robotND1-proj4_Segmentation_Lab
+* [Semantic Segmentation lab](https://github.com/caudaz/robotND1-proj4_Segmentation_Lab)
 
 * [Project4 exercise code] (https://google.com)
 
