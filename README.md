@@ -1,26 +1,26 @@
-Robotics Nanodegree
+#Robotics Nanodegree#
 
-Term1 – Project4: Follow Me
+#Term1 – Project4: Follow Me#
 
 ![](./media/caudaz_followme_modelweights_720p_18to48sec_569x320p_10fps.gif)
 
-INTRO
+##INTRO##
 
 The purpose of this project is to implement a Fully Convolutional
 Network (FCN) to identify a target person on a streaming video and
 follow it using a drone. Concepts learned for project4 (including the
 labs) were:
 
--Basic quadcopter flight dynamics
+*Basic quadcopter flight dynamics
 
--PID controllers
+*PID controllers
 
--FCN: 1D convolutions, transposed convolutions, skip connections, batch
+*FCN: 1D convolutions, transposed convolutions, skip connections, batch
 normalization
 
--Keras (as a higher level of TF for rapid prototyping of NNs)
+*Keras (as a higher level of TF for rapid prototyping of NNs)
 
-DATA COLLECTION
+##DATA COLLECTION##
 
 Part of the project was to collect the image data to train the FCN. It
 is essential to devise a good strategy for this so that all types of
@@ -36,7 +36,7 @@ target)
 
 -images w/out target or non-target people
 
-FCN
+##FCN##
 
 FCNs classify and predict where the object is in the image as opposed to
 CNNs that only classify the object. After the FCN is trained, the
@@ -62,12 +62,12 @@ dimension. Also called “deconvolutions”
 feed the output of layers in the encoding block to layers in the decoder
 block, using element wise operations. Allow for multiple resolutions.
 
-![](./media/skip_connections.jpeg)
+![](./media/skip_connections.jpg)
 
 The following image shows how skip connections enhance the FCN
 predictions:
 
-![](./media/FCN_comparison_vs_nonFCN.jpeg)
+![](./media/FCN_comparison_vs_nonFCN.jpg)
 
 Batch normalization, normalizes the input to each layer. Due to this
 extra computation, each pass takes longer to complete, but overall
@@ -77,7 +77,7 @@ If we wanted the drone to follow a different target shape, e.g. a dog,
 or a robot, the FCN would have to be retrained to obtain a new set of
 weights. However, the same architecture can be used.
 
-TRAINING PARAMETERS CHOSEN
+##TRAINING PARAMETERS CHOSEN##
 
 learning\_rate = 0.002 (chosen high since using batch normalization)
 
@@ -104,36 +104,36 @@ The model was run on Amazon’s EC2 p2.xlarge instance.
 
 Evaluation of images following target person:
 
-![](./media/eval1.jpeg)
+![](./media/eval1.jpg)
 
 Evaluation of images patrolling w/out target person:
 
-![](./media/eval2.jpeg)
+![](./media/eval2.jpg)
 
 Evaluation of images patrolling with target:
 
-![](./media/eval3.jpeg)
+![](./media/eval3.jpg)
 
 Scores:
 
-![](./media/scores.jpeg)
+![](./media/scores.jpg)
 
 The FCN was able to obtain a final passing score &gt; 0.4. More data
 able to improve accuracy of the model. The model is saved by creating an
 .h5 file that contains all weights of the FCN.
 
-QUADCOPTER FOLLOW ME using INFERENCE
+##QUADCOPTER FOLLOW ME using INFERENCE##
 
 Using the frozen weights of the FCN, the Quadcopter can be controlled by
 using the follower.py script.
 
 A video showing the follow me is shown here.
 
-FUTURE ENHANCEMENTS
+##FUTURE ENHANCEMENTS##
 
 Inception modules
 
-INSTRUCTIONS FOR DATA PROCESSING
+##INSTRUCTIONS FOR DATA PROCESSING##
 
 1-These folders should exist and contain the appropriate processed
 data(after running preprocess\_ims.py):
