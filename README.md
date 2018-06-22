@@ -15,10 +15,22 @@ labs) were:
 
 * PID controllers
 
-* FCN: 1D convolutions, transposed convolutions, skip connections, batch
+* Semantic Segmenation using FCN: 1D convolutions, transposed convolutions, skip connections, batch
 normalization
 
 * Keras (as a higher level of TF for rapid prototyping of NNs)
+
+## LINKS ##
+
+* [Original UDACITY REPO](https://github.com/udacity/RoboND-DeepLearning-Project)
+
+* [PID control exercises](https://github.com/caudaz/robotND1-proj4_PID_control)
+
+* [Quadrotor controls lab](https://github.com/caudaz/robotND1-proj4_Quadrotor_PID
+
+* [Semantic Segmentation lab](https://github.com/caudaz/robotND1-proj4_Segmentation_Lab
+
+* [Project4 exercise code] (https://google.com)
 
 ## DATA COLLECTION ##
 
@@ -150,8 +162,10 @@ data/validation/images/
 data/validation/masks/
 ```
 
-2-copy into folder: \~/robotND1-proj4/data\$ cp -r
-processed\_sim\_data/\* .
+2-copy into folder: 
+```
+~/robotND1-proj4/data\$ cp -r processed\_sim\_data/\* .
+```
 
 NOTE: BUG when running preprocess\_ims.py on NUMPY , will not create the
 correct number of mask image files
