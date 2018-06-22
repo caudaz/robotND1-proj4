@@ -11,14 +11,14 @@ Network (FCN) to identify a target person on a streaming video and
 follow it using a drone. Concepts learned for project4 (including the
 labs) were:
 
-*Basic quadcopter flight dynamics
+* Basic quadcopter flight dynamics
 
-*PID controllers
+* PID controllers
 
-*FCN: 1D convolutions, transposed convolutions, skip connections, batch
+* FCN: 1D convolutions, transposed convolutions, skip connections, batch
 normalization
 
-*Keras (as a higher level of TF for rapid prototyping of NNs)
+* Keras (as a higher level of TF for rapid prototyping of NNs)
 
 ## DATA COLLECTION ##
 
@@ -87,9 +87,9 @@ batch_size = 32 (to keep computer memory low)
 num_epochs = 50 ( after ~50 passes, no decrease in loss, so stop here
 to avoid overfitting)
 
-steps_per_epoch = #train_samples // batch\_size + 1
+steps_per_epoch = #train_samples // batch_size + 1
 
-validation_steps = #valid_samples // batch\_size +1
+validation_steps = #valid_samples // batch_size +1
 ```
 
 ## EVALUATION and SENSITIVITY to DATASET SIZE ##
