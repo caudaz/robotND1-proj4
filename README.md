@@ -30,7 +30,7 @@ normalization
 
 * [Semantic Segmentation lab](https://github.com/caudaz/robotND1-proj4_Segmentation_Lab)
 
-* [Project4 exercise code] (https://google.com)
+* [Project4 exercise code](https://google.com)
 
 ## DATA COLLECTION ##
 
