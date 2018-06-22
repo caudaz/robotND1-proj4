@@ -79,18 +79,20 @@ weights. However, the same architecture can be used.
 
 ## TRAINING PARAMETERS CHOSEN ##
 
-learning\_rate = 0.002 (chosen high since using batch normalization)
+```
+learning_rate = 0.002 (chosen high since using batch normalization)
 
-batch\_size = 32 (to keep computer memory low)
+batch_size = 32 (to keep computer memory low)
 
-num\_epochs = 50 ( after \~50 passes, no decrease in loss, so stop here
+num_epochs = 50 ( after ~50 passes, no decrease in loss, so stop here
 to avoid overfitting)
 
-steps\_per\_epoch = \#train\_samples // batch\_size + 1
+steps_per_epoch = #train_samples // batch\_size + 1
 
-validation\_steps = \#valid\_samples // batch\_size +1
+validation_steps = #valid_samples // batch\_size +1
+```
 
-EVALUATION and SENSITIVITY to DATASET SIZE
+## EVALUATION and SENSITIVITY to DATASET SIZE ##
 
 The FCN was run using 2 data sets:
 
@@ -102,19 +104,19 @@ for validation
 
 The model was run on Amazon’s EC2 p2.xlarge instance.
 
-Evaluation of images following target person:
+### Evaluation of images following target person: ###
 
 ![](./media/eval1.jpg)
 
-Evaluation of images patrolling w/out target person:
+### Evaluation of images patrolling w/out target person: ###
 
 ![](./media/eval2.jpg)
 
-Evaluation of images patrolling with target:
+### Evaluation of images patrolling with target: ###
 
 ![](./media/eval3.jpg)
 
-Scores:
+### Scores: ####
 
 ![](./media/scores.jpg)
 
