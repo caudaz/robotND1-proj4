@@ -101,7 +101,9 @@ steps_per_epoch = #train_samples // batch_size + 1
 
 validation_steps = #valid_samples // batch_size +1
 ```
+
 Convergence after 50 epochs:
+
 ![](./media/model_training_epoch50.jpg)
 
 ## EVALUATION and SENSITIVITY to DATASET SIZE ##
