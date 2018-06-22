@@ -1,10 +1,10 @@
-#Robotics Nanodegree#
+# Robotics Nanodegree #
 
-#Term1 – Project4: Follow Me#
+# Term1 – Project4: Follow Me #
 
 ![](./media/caudaz_followme_modelweights_720p_18to48sec_569x320p_10fps.gif)
 
-##INTRO##
+## INTRO ##
 
 The purpose of this project is to implement a Fully Convolutional
 Network (FCN) to identify a target person on a streaming video and
