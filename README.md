@@ -87,6 +87,20 @@ If we wanted the drone to follow a different target shape, e.g. a dog,
 or a robot, the FCN would have to be retrained to obtain a new set of
 weights. However, the same architecture can be used.
 
+## FCN ##
+
+The FCN layers tensor size are:
+
+inputs         (?, 160, 160,   3)
+encoder1_layer (?,  80,  80,  32)
+encoder2_layer (?,  40,  40,  64)
+encoder3_layer (?,  20,  20,  96)
+conv_layer     (?,  20,  20, 128)
+decoder1_layer (?,  40,  40,  96)
+decoder2_layer (?,  80,  80,  64)
+decoder3_layer (?, 160, 160,  32)
+output_layer   (?, 160, 160,   3)
+
 ## TRAINING PARAMETERS CHOSEN ##
 
 ```
