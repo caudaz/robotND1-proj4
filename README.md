@@ -181,23 +181,20 @@ data/validation/masks/
 
 2-copy into folder: 
 ```
-~/robotND1-proj4/data\$ cp -r processed\_sim\_data/\* .
+~/robotND1-proj4/data$ cp -r processed_sim_data/* .
 ```
 
 NOTE: BUG when running preprocess\_ims.py on NUMPY , will not create the
 correct number of mask image files
 
 ```
-(RoboND) :/mnt/c/UDACITY-robotics4/robotND1-proj4/code\# python
-preprocess\_ims.py
+(RoboND) :/mnt/c/UDACITY-robotics4/robotND1-proj4/code$ python preprocess_ims.py
 
 File
 "/root/miniconda3/envs/RoboND/lib/python3.5/site-packages/scipy/misc/pilutil.py",
 line 97, in bytescale cscale = cmax - cmin
 
-TypeError: numpy boolean subtract, the \`-\` operator, is deprecated,
-use the bitwise\_xor, the \`\^\` operator, or the logical\_xor function
-instead.
+TypeError: numpy boolean subtract, the `-` operator, is deprecated
 ```
 
 Basically, the latest numpy version is 1.14.2, but you want to go back
@@ -222,9 +219,9 @@ NO ERRORS now!!!!!
 2-start controls
 ```
 
-(RoboND) ~/robotND1-proj4/code\$ pwd
+(RoboND) ~/robotND1-proj4/code$ pwd
 
 /home/a1/robotND1-proj4/code
 
-(RoboND) ~/robotND1-proj4/code\$ python follower.py model_weights
+(RoboND) ~/robotND1-proj4/code$ python follower.py model_weights
 ```
