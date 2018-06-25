@@ -90,7 +90,7 @@ weights. However, the same architecture can be used.
 ## FCN ##
 
 The FCN layers tensor size are:
-
+```
 inputs         (?, 160, 160,   3)
 encoder1_layer (?,  80,  80,  32)
 encoder2_layer (?,  40,  40,  64)
@@ -100,6 +100,7 @@ decoder1_layer (?,  40,  40,  96)
 decoder2_layer (?,  80,  80,  64)
 decoder3_layer (?, 160, 160,  32)
 output_layer   (?, 160, 160,   3)
+```
 
 ## TRAINING PARAMETERS CHOSEN ##
 
