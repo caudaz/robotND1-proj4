@@ -59,16 +59,17 @@ convolution:
 
 The basic characteristics of a FCN are:
 
--1x1 convolutions, can accept any si
+* 1x1 convolutions: reduces layers to a deeper 1x1 convolution layer as opposed to a fully connected layer does basic classification of images.
+The effect is to preserve image spacial information.
 
 ![](./media/1x1_convolution.jpg)
 
--Transposed convolutions – upsample the previous layer to a desired
+* Transposed convolutions – upsample the previous layer to a desired
 dimension. Also called “deconvolutions”
 
 ![](./media/transposed_convolutions.jpg)
 
--Skip connections – allow to know where in the image the object is. They
+* Skip connections – allow to know where in the image the object is. They
 feed the output of layers in the encoding block to layers in the decoder
 block, using element wise operations. Allow for multiple resolutions.
 
