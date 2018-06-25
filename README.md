@@ -162,7 +162,10 @@ using the follower.py script.
 
 ## FUTURE ENHANCEMENTS ##
 
-Inception modules
+* Inception modules
+
+* [Attention and Augmented Recurrent Neural Networks](https://distill.pub/2016/augmented-rnns/)
+
 
 ## INSTRUCTIONS FOR DATA PROCESSING ##
 
